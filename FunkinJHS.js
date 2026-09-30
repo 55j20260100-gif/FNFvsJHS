@@ -1,6 +1,6 @@
 const FunkinFont = new FontFace(
   "FunkinFont"
-  "FunkinFont.ttf"
+  "url(assets/FunkinFont.ttf)"
 );
 document.appendChild("img");
 img.style.display = "none";
