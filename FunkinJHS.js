@@ -2,5 +2,8 @@ const FunkinFont = new FontFace(
   "FunkinFont"
   "url(assets/FunkinFont.ttf)"
 );
-document.appendChild("img");
+const MainLoadingMusic = new Audio("assets/FunkinBgm.mp3");
+FunkinFont.load().then(() -> {
+  
+)};
 img.style.display = "none";
