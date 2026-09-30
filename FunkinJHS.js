@@ -5,7 +5,7 @@ const FunkinFont = new FontFace(
 
 document.body.style.backgroundColor = "black";
 
-const MainLoadingMusic = new Audio("assets/FunkinBgm.wav");
+const MainLoadingMusic = new Audio("assets/FunkinBGM.wav");
 
 FunkinFont.load().then(() => {
   document.fonts.add(FunkinFont);
