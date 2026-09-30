@@ -1,17 +1,21 @@
-const Font = new FontFace(
-  "FunkinFont"
+const FunkinFont = new FontFace(
+  "FunkinFont",
   "url(assets/FunkinFont.ttf)"
 );
 
 document.body.style.backgroundColor = "black";
-const MainLoadingMusic = new Audio("assets/FunkinBgm.wav");
-FunkinFont.load().then(() => {
-  document.fonts.add(Font);
-  document.body.style.fontFamily = "FunkinFont";
-)};
 
-const main = document.createElement("div");
-main.textContent = "A FNF Mod"
-main.style.fontFamily = "FunkinFont";
-document.body.appendChild(main);
-img.style.display = "none";
+const MainLoadingMusic = new Audio("assets/FunkinBgm.wav");
+
+FunkinFont.load().then(() => {
+  document.fonts.add(FunkinFont);
+
+  document.body.style.fontFamily = "FunkinFont";
+
+  const main = document.createElement("div");
+  main.textContent = "A FNF Mod";
+  main.style.fontFamily = "FunkinFont";
+  main.style.color = "white";
+
+  document.body.appendChild(main);
+});
