@@ -1,4 +1,6 @@
-const img = document.createElement("img");
-img.src = "mainmenu.img";
+const FunkinFont = new FontFace(
+  "FunkinFont"
+  "FunkinFont.ttf"
+);
 document.appendChild("img");
 img.style.display = "none";
